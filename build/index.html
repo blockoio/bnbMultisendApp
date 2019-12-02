@@ -1,0 +1,112 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Aergo Multisend at Binance Chain</title>
+</head>
+
+<body>
+
+    <h2> Aergo Multisend at Binance Chain </h2>
+
+
+    <table>
+        <tr>
+            <th width="150"></th>
+            <th width="450"></th>
+        </tr>
+        <tr>
+            <td>
+                KeyStore File Text
+            </td>
+            <td>
+                <textarea id="keystoreText" cols="70" rows="10"
+                    placeholder="json format keystore file text"></textarea><br />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                KeyStore File Password
+            </td>
+            <td>
+                <input id="passwordText" type="password" size="45" placeholder="password"> </input>
+                <input id="loginKeystoreButton" type="button" value="Login using Keystore"> </input>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                From Address
+            </td>
+            <td>
+                <div id="addressDiv"> (Login Required)</div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                List of Address, Amount <br /> (separated by newline)
+            </td>
+            <td>
+                <textarea id="targetText" cols="70" rows="20"
+                    placeholder="toAddress (whitespace) amount (newline)"></textarea>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                Memo
+            </td>
+            <td>
+                <input id="memoText" type="text" size="50" maxlength="128" value="Aergo AMA Reward"> (optional, max 128)
+                </input>
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2">------------- <br /> <b> Transaction Summary</b> </td>
+        </tr>
+        <tr>
+            <td>
+                Error
+            </td>
+            <td>
+                <div id="errorDiv"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Total # of Receivers (2 ~ 400 is safe)
+            </td>
+            <td>
+                <div id="receiversDiv"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Total Amount
+            </td>
+            <td>
+                <div id="totalAmountDiv"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Fee (0.0003 BNB * #)
+            </td>
+            <td>
+                <div id="feeDiv"></div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">-------------</td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="button" id="sendButton" value="Send Transaction">
+            </td>
+        </tr>
+    </table>
+
+</body>
+<script src="main.js"></script>
+
+</html>
