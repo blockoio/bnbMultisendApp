@@ -11,4 +11,9 @@ This app is used to send bep-2 type Argo tokens to multiple users in the Binance
 1. (Optional) Enter a `memo text`.
 1. Click `Send Transaction` button. After a while, a success or failure warning pops up.
 
+
+Alternatively, you can easily use the static page( https://blockoio.github.io/bnbMultisendApp/build/ ) provided by the github page. (But be careful because there may be security issues.)
+
+
 Currently only AERGO-46B is supported. However, with a little expansion, other types of tokens can be supported.
+
